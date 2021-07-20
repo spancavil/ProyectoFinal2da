@@ -9,8 +9,8 @@ mySQL (local)
 A continuación, se adjuntan los bodies a utilizar en los distintos endpoints.
 
 ### Productos
-POST /guardar
-{
+- POST /guardar
+```Javascript {
   "nombre": "un lindo producto",
   "descripcion": "Una linda descripción",
   "codigo": "iasjdijx8374hasdb",
@@ -19,9 +19,10 @@ POST /guardar
   "id": 4,
   "timeStamp": "7/20/2021, 11:09:35 AM"
 }
+```
 
-PUT /actualizar/:id
-{
+- PUT /actualizar/:id
+```Javascript {
   "nombre": "un FEO producto",
   "descripcion": "Una FEA descripción",
   "codigo": "iasjdijx8374hasdb",
@@ -30,15 +31,16 @@ PUT /actualizar/:id
   "timeStamp": "7/20/2021, 11:10:33 AM",
   "id": 2
 }
+```
 
 ### Carrito
 No requiere bodies
 
 ## Notas importantes
-⋅⋅⋅ No se incopora ninguna vista, todas las consultas se deben hacer a través de POSTMAN o ThunderClient (extensión de VSC).
+1. No se incopora ninguna vista, todas las consultas se deben hacer a través de POSTMAN o ThunderClient (extensión de VSC).
 
-⋅⋅⋅ En mySQL se hizo una relación uno a muchos, utilizando una foreign key, de modo tal que si se quiere guardar un producto en el carrito con un id que no esté presente en la tabla de productos, no se puede guardar.
+2. En mySQL se hizo una relación uno a muchos, utilizando una foreign key, de modo tal que si se quiere guardar un producto en el carrito con un id que no esté presente en la tabla de productos, no se puede guardar.
 
-⋅⋅⋅ Para seleccionar las persistencias se optó por generar un archivo llamado persistenceTypes en la carpeta cfg. Se debe cambiar los valores desde ahí, para seleccionar la persistencia adecuada (se comentó como debería escribirse).
+3. Para seleccionar las persistencias se optó por generar un archivo llamado persistenceTypes en la carpeta cfg. Se debe cambiar los valores desde ahí, para seleccionar la persistencia adecuada (se comentó como debería escribirse).
 
-⋅⋅⋅ Se siguió un modelo de factory para obtener la persistencia adecuada. A su vez cada persistencia hereda de una interface común, para que todas tengan los mismos métodos.
+4. Se siguió un modelo de factory para obtener la persistencia adecuada. A su vez cada persistencia hereda de una interface común, para que todas tengan los mismos métodos.
