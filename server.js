@@ -26,7 +26,7 @@ app.use(express.static('public'));
 app.use('/productos', routerProductos);
 app.use('/carrito', routerCarrito);
 
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(process.env.PORT || 8080, () => {
     console.log(`servidor escuchando en http://localhost:${process.env.PORT}`);
 });
 

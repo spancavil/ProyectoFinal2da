@@ -1,3 +1,4 @@
+// Se importa el tipo de persistencia desde este archivo.
 const {prodOCarrito, type} = require('../cfg/persistenceTypes.js')
 
 class PersistenciaFactoryProductos {
@@ -5,11 +6,6 @@ class PersistenciaFactoryProductos {
         this.prodOCarrito = prodOCarrito;
         this.type = type;
     }
-
-    //O => memoria
-    //1 => mySQL/MariaDB
-    //2 => MongoDB (local)
-    //3 => MongoDB (atlas)
 
     getPersist (){
         try {
