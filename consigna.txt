@@ -1,0 +1,9 @@
+Persistencias
+
+mysql local
+mongodb local
+mongo atlas
+
+optional
+firebase
+sqlite3

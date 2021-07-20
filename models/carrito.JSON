@@ -1,0 +1,28 @@
+[
+	{
+		"producto": {
+			"nombre": "un lindo producto",
+			"descripcion": "Una linda descripción",
+			"codigo": "iasjdijx8374hasdb",
+			"precio": 200,
+			"stock": 10,
+			"id": 4,
+			"timeStamp": "7/20/2021, 11:09:35 AM"
+		},
+		"id": 6,
+		"timeStamp": "7/20/2021, 11:31:24 AM"
+	},
+	{
+		"producto": {
+			"nombre": "un lindo producto",
+			"descripcion": "Una linda descripción",
+			"codigo": "iasjdijx8374hasdb",
+			"precio": 200,
+			"stock": 10,
+			"id": 3,
+			"timeStamp": "7/20/2021, 11:09:34 AM"
+		},
+		"id": 7,
+		"timeStamp": "7/20/2021, 11:31:30 AM"
+	}
+]
