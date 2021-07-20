@@ -10,26 +10,28 @@ A continuación, se adjuntan los bodies a utilizar en los distintos endpoints.
 
 ### Productos
 - POST /guardar
-```Javascript {
-  "nombre": "un lindo producto",
-  "descripcion": "Una linda descripción",
-  "codigo": "iasjdijx8374hasdb",
-  "precio": 200,
-  "stock": 10,
-  "id": 4,
-  "timeStamp": "7/20/2021, 11:09:35 AM"
+```Javascript 
+{
+    "admin":true,
+    "nombre":"un lindo producto",
+    "descripcion":"Una linda descripción",
+    "codigo":"iasjdijx8374hasdb",
+    "imagen":"/path/ficticio/2912u38",
+    "precio":200,
+    "stock":10
 }
 ```
 
 - PUT /actualizar/:id
-```Javascript {
-  "nombre": "un FEO producto",
-  "descripcion": "Una FEA descripción",
-  "codigo": "iasjdijx8374hasdb",
-  "precio": 200,
-  "stock": 2,
-  "timeStamp": "7/20/2021, 11:10:33 AM",
-  "id": 2
+```Javascript 
+{
+    "admin":true,
+    "nombre":"un FEO producto",
+    "descripcion":"Una FEA descripción",
+    "codigo":"iasjdijx8374hasdb",
+    "imagen":"/path/ficticio/2912u38",
+    "precio":200,
+    "stock": 2
 }
 ```
 
